@@ -1,0 +1,135 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated color palette to match provided HSL specifications */
+  --navy-blue: hsl(215, 75%, 25%);
+  --pastel-green: hsl(150, 40%, 85%);
+  --mint: hsl(165, 50%, 88%);
+  --soft-mint-bg: hsl(120, 20%, 98%);
+  --yellow-error: hsl(45, 100%, 85%);
+  --red-error: hsl(0, 75%, 65%);
+  --gray-neutral: hsl(220, 10%, 75%);
+  --purple-tone: hsl(270, 60%, 70%);
+
+  --background: var(--soft-mint-bg);
+  --foreground: var(--navy-blue);
+  --card: hsl(0, 0%, 100%);
+  --card-foreground: var(--navy-blue);
+  --popover: hsl(0, 0%, 100%);
+  --popover-foreground: var(--navy-blue);
+  --primary: var(--navy-blue);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: var(--pastel-green);
+  --secondary-foreground: var(--navy-blue);
+  --muted: var(--gray-neutral);
+  --muted-foreground: var(--navy-blue);
+  --accent: var(--mint);
+  --accent-foreground: var(--navy-blue);
+  --destructive: var(--red-error);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(0, 0%, 95%);
+  --input: hsl(0, 0%, 98%);
+  --ring: var(--mint);
+  --chart-1: var(--navy-blue);
+  --chart-2: var(--mint);
+  --chart-3: var(--pastel-green);
+  --chart-4: var(--yellow-error);
+  --chart-5: var(--purple-tone);
+  --radius: 0.625rem;
+  --sidebar: hsl(220, 20%, 15%);
+  --sidebar-foreground: var(--navy-blue);
+  --sidebar-primary: var(--navy-blue);
+  --sidebar-primary-foreground: hsl(0, 0%, 100%);
+  --sidebar-accent: var(--mint);
+  --sidebar-accent-foreground: var(--navy-blue);
+  --sidebar-border: hsl(0, 0%, 95%);
+  --sidebar-ring: var(--mint);
+}
+
+.dark {
+  --background: hsl(220, 20%, 15%);
+  --foreground: hsl(0, 0%, 98%); 
+  --card: hsl(220, 20%, 20%);
+  --card-foreground: hsl(0, 0%, 98%);
+  --popover: hsl(220, 20%, 20%);
+  --popover-foreground: hsl(0, 0%, 98%);
+  --primary: var(--navy-blue);
+  --primary-foreground: hsl(0, 0%, 100%);
+  --secondary: var(--pastel-green);
+  --secondary-foreground: var(--navy-blue);
+  --muted: var(--gray-neutral);
+  --muted-foreground: hsl(0, 0%, 80%);
+  --accent: var(--mint);
+  --accent-foreground: var(--navy-blue);
+  --destructive: var(--red-error);
+  --destructive-foreground: hsl(0, 0%, 100%);
+  --border: hsl(220, 20%, 30%);
+  --input: hsl(220, 20%, 25%);
+  --ring: var(--mint);
+  --chart-1: var(--navy-blue);
+  --chart-2: var(--mint);
+  --chart-3: var(--pastel-green);
+  --chart-4: var(--yellow-error);
+  --chart-5: var(--purple-tone);
+  --sidebar: hsl(220, 20%, 20%);
+  --sidebar-foreground: hsl(0, 0%, 98%);
+  --sidebar-primary: var(--navy-blue);
+  --sidebar-primary-foreground: hsl(0, 0%, 100%);
+  --sidebar-accent: var(--mint);
+  --sidebar-accent-foreground: var(--navy-blue);
+  --sidebar-border: hsl(220, 20%, 30%);
+  --sidebar-ring: var(--mint);
+}
+
+@theme inline {
+  --font-sans: "Geist", "Geist Fallback";
+  --font-mono: "Geist Mono", "Geist Mono Fallback";
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
