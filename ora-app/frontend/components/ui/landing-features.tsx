@@ -17,7 +17,7 @@ function LandingFeatures() {
     {
       icon: Shield,
       title: "Senp Sèvi",
-      description: "Entèfas enstritif ki fasil pou tout moun itilize",
+      description: "Entèfas enstriktif ki fasil pou tout moun itilize",
     },
   ];
 
@@ -41,24 +41,25 @@ function LandingFeatures() {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {features.map((feature, index) => {
-            const Icon = feature.icon;
-            return (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
-                className="p-6 rounded-lg bg-slate-800/50 border border-slate-700 hover:border-emerald-500/50 transition-all"
-              >
-                <Icon className="w-10 h-10 text-emerald-400 mb-4" />
-                <h3 className="text-xl font-semibold text-white mb-2">
-                  {feature.title}
-                </h3>
-                <p className="text-slate-400">{feature.description}</p>
-              </motion.div>
-            );
-          })}
+            {features.map((feature, index) => {
+              const Icon = feature.icon;
+              return (
+                <motion.div
+                  key={index}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  className="p-6 rounded-lg bg-slate-800/50 border border-slate-700 hover:border-emerald-500/50 transition-all"
+                >
+                  <Icon className="w-10 h-10 text-emerald-400 mb-4" />
+                  <h3 className="text-xl font-semibold text-white mb-2">
+                    {feature.title}
+                  </h3>
+                  <p className="text-slate-400">{feature.description}</p>
+                </motion.div>
+              );
+            })
+          }
         </div>
       </div>
     </section>
