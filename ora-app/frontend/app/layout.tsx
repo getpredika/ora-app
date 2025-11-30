@@ -2,7 +2,6 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
-import { LandingFooter } from "@/components/ui/landing-footer"
 import "./globals.css"
 
 const _geist = Geist({ subsets: ["latin"] })
@@ -15,11 +14,11 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: "/placeholder.svg",
+        url: "/ora-app.svg",
         type: "image/svg+xml",
       },
     ],
-    apple: "/predika-logo.png",
+    apple: "/ora-app.png",
   },
 }
 
