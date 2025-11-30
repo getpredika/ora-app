@@ -5,7 +5,7 @@ export default function DemoHeroGeometric() {
         <>
             <HeroGeometric
                 badge="ORA AI"
-                title1="Bay Vwa AI"
+                title1="Bay Vokal AI"
                 title2="Kreyòl La Lavi"
             />
         </>

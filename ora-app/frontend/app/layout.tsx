@@ -10,7 +10,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "ORA - Tèks an Vwa Kreyòl",
   description: "Konvèti tèks Kreyòl an vwa natirèl ak miltip vwa",
-  generator: "predika.app",
+  generator: "ora.app",
   icons: {
     icon: [
       {
