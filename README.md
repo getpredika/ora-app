@@ -1,6 +1,6 @@
 # ORA – Haitian Creole STT/TTS Platform
 
-ORA is a modern web application built with **Next.js**, designed to showcase and test the AYIRA AI model for **Text-to-Speech (TTS)** and **Speech-to-Text (STT)** in **Haitian Creole**.  
+ORA is a modern web application built with **Next.js**, designed to showcase and test the AYIRA AI model for **Text-to-Speech (TTS)** and **Speech-to-Text (STT)** in **Haitian Creole** that build by the PREDIKA team.  
 It offers a simple, fast, and elegant interface for users to interact with Kreyòl-powered speech technology.
 
 ## 🚀 Features
@@ -42,5 +42,6 @@ It offers a simple, fast, and elegant interface for users to interact with Krey�
 Clone the repository:
 
 ```bash
-git clone 
+git clone https://github.com/getpredika/ora-app.git
 
+npm install
